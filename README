@@ -1,0 +1,29 @@
+NAME
+    Path::Executable - Find the locations in your PATH where commands appear
+
+SYNOPSIS
+      use Path::Executable;
+
+      my @locations = path_exe( 'xml2-config' );
+
+DESCRIPTION
+    Path::Executable provides a convenient mechanism for determining if a
+    command exists in multiple locations within $ENV{PATH}.
+
+FUNCTIONS
+    "path_exe"
+        This function is exported by default, takes a single argument, the
+        name of a command to look for in $ENV{PATH}. Returns an empty list
+        if the command does not appear in the "PATH", otherwise it will
+        return a list of the full command paths it has found.
+
+AUTHOR
+    Chris "BinGOs" Williams <chris@bingosnet.co.uk>
+
+LICENSE
+    Copyright © Chris Williams
+
+    This module may be used, modified, and distributed under the same terms
+    as Perl itself. Please see the license that came with your Perl
+    distribution for details.
+
